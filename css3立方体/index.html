@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            perspective: 600px;
+        }
+        .wrapper {
+            width: 300px;
+            height: 300px;
+            border: 1px solid #000;
+            position: relative;
+            margin:  100px auto;
+            transform-style: preserve-3d;
+            transition: transform 2s;
+        }
+        .wrapper .face {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 50%;
+            margin-top: -100px;
+            left: 50%;
+            margin-left: -100px;
+        }
+        .face:nth-child(1) {
+            background-color: aqua;
+            transform: translateZ(100px);
+        }
+        .face:nth-child(2) {
+            background-color: salmon;
+            transform: translateZ(-100px);
+        }
+        .face:nth-child(3) {
+            background-color: skyblue;
+            transform: rotateY(90deg) translateZ(100px);
+        }
+        .face:nth-child(4) {
+            background-color: palevioletred;
+            transform: rotateY(-90deg) translateZ(100px);
+        }
+        .face:nth-child(5) {
+            background-color:springgreen;
+            transform: rotateX(90deg) translateZ(100px);
+        }
+        .face:nth-child(6) {
+            background-color: crimson;
+            transform: rotateX(-90deg) translateZ(100px);
+        }
+        .wrapper:hover {
+            transform: rotateX(270deg) rotateY(270deg) rotateZ(30deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="face">1</div>
+        <div class="face">2</div>
+        <div class="face">3</div>
+        <div class="face">4</div>
+        <div class="face">5</div>
+        <div class="face">6</div>
+    </div>
+</body>
+</html>

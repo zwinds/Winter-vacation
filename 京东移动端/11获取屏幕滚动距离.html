@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        .banner{
+            width: 300px;height: 12000px;background-image: linear-gradient(#e66465, #9198e5);margin: auto;
+        }
+        .up{
+            width: 300px;height: 10px;background-color:#E66566;margin: auto;display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div class="up"></div>
+    <div class="banner"></div>
+    <script>
+        var up = document.querySelector(".up");
+        var upHeight=up.offsetHeight;
+        window.onscroll=function(){
+            var offsetTop=document.body.scrollTop;
+            console.log(offsetTop);
+        }
+    </script>
+</body>
+</html>

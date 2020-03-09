@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- 调用公共部分 -->
+    <link rel="stylesheet" href="./css/base.css">
+    <style>
+        .jd_product {
+            padding: 0 5px;
+        }
+
+        /*商品盒子*/
+        .jd_proBox {
+            margin-top: 10px;
+            box-shadow: 0 0 1px #d8d8d8;
+            min-height: 200px;
+            background: #fff;
+        }
+
+        .jd_proBox .pro_tit {
+            height: 34px;
+            line-height: 34px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        /*no border*/
+        .jd_proBox .pro_tit.nb {
+            border-bottom: none;
+        }
+
+        .jd_proBox .pro_tit h3 {
+            position: relative;
+            text-indent: 20px;
+            font-weight: normal;
+            /*原始的默认的*/
+        }
+
+        .jd_proBox .pro_tit h3::before {
+            content: "";
+            position: absolute;
+            left: 10px;
+            top: 11px;
+            width: 3px;
+            height: 12px;
+            background: #d8505c;
+        }
+
+        /*秒杀*/
+        .sk_icon {
+            width: 16px;
+            height: 20px;
+            float: left;
+            margin-top: 7px;
+            margin-left: 10px;
+            /*一倍左右*/
+            background: url("./images/seckill-icon.png") no-repeat;
+            background-size: 16px 20px;
+        }
+
+        .sk_text {
+            color: #d8505c;
+            margin-left: 10px;
+            float: left;
+        }
+
+        .sk_time {
+            float: left;
+            margin-left: 10px;
+        }
+
+        .sk_time span {
+            width: 16px;
+            height: 16px;
+            text-align: center;
+            line-height: 16px;
+            color: #fff;
+            background: #333;
+            margin-left: 3px;
+            float: left;
+            margin-top: 7px;
+        }
+
+        .sk_time span:nth-child(3n) {
+            background: #fff;
+            color: #333;
+            width: 3px;
+        }
+
+        /*秒杀的内容 商品*/
+        .sk_product {
+            width: 100%;
+            padding: 10px 0;
+        }
+
+        .sk_product li {
+            width: 33.33333%;
+            float: left;
+        }
+
+        .sk_product li a {
+            width: 100%;
+            display: block;
+            border-right: 1px solid #ddd;
+        }
+
+        .sk_product li:last-child a {
+            border-right: none;
+        }
+
+        .sk_product li a img {
+            width: 64%;
+            margin: 0 auto;
+            display: block;
+        }
+
+        .sk_product li p {
+            font-size: 12px;
+            text-align: center;
+            padding: 5px 0;
+        }
+
+        .sk_product li .now_price {
+            color: #d8505c;
+        }
+
+        .sk_product li .old_price {
+            color: #666;
+            text-decoration: line-through;
+        }
+
+        /*组合样式*/
+        .w_p50 {
+            width: 50%;
+        }
+
+        .w_p50 img {
+            display: block;
+            width: 100%;
+        }
+
+        .b_left {
+            border-left: 1px solid #ddd;
+        }
+
+        .b_right {
+            border-right: 1px solid #ddd;
+        }
+
+        .b_bottom {
+            border-bottom: 1px solid #ddd;
+        }
+    </style>
+</head>
+
+<body>
+    <!--产品区块-->
+    <div class="jd_product">
+        <section class="jd_proBox">
+            <div class="pro_tit nb">
+                <div class="f_left">
+                    <span class="sk_icon"></span>
+                    <span class="sk_text">掌上秒杀</span>
+                    <div class="sk_time">
+                        <span>0</span>
+                        <span>0</span>
+                        <span>:</span>
+                        <span>0</span>
+                        <span>0</span>
+                        <span>:</span>
+                        <span>0</span>
+                        <span>0</span>
+                    </div>
+                </div>
+                <div class="f_right"><a href="#" class="m_r10">更多></a></div>
+            </div>
+            <div class="pro_con">
+                <ul class="sk_product clearfix">
+                    <li>
+                        <a href="#"><img src="images/detail01.jpg" alt="" /></a>
+                        <p class="now_price">¥10.00</p>
+                        <p class="old_price">¥100.00</p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/detail02.jpg" alt="" /></a>
+                        <p class="now_price">¥10.00</p>
+                        <p class="old_price">¥100.00</p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/detail01.jpg" alt="" /></a>
+                        <p class="now_price">¥10.00</p>
+                        <p class="old_price">¥100.00</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        </div>
+    </div>
+        <script src="js/common.js"></script>
+        <script src="js/index.js"></script>
+</body>
+
+</html>

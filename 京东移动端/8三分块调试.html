@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>京东</title>
+    <!-- 导入公共样式的style标签 -->
+    <link rel="stylesheet" href="css/base.css" />
+    <!-- 添加三分块的独立样式 -->
+
+    <style>
+        body {
+            background: #f5f5f5;
+        }
+
+        /*组合样式*/
+        .w_p50 {
+            width: 50%;
+        }
+
+        .w_p50 img {
+            display: block;
+            width: 100%;
+        }
+
+        .b_left {
+            border-left: 1px solid #ddd;
+        }
+
+        .b_right {
+            border-right: 1px solid #ddd;
+        }
+
+        .b_bottom {
+            border-bottom: 1px solid #ddd;
+        }
+
+        /*导航栏*/
+        .jd_nav {
+            width: 100%;
+            background: #fff;
+        }
+
+        .jd_nav ul {
+            width: 100%;
+            padding: 10px 0;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .jd_nav ul li {
+            width: 25%;
+            float: left;
+        }
+
+        .jd_nav ul li a {
+            display: block;
+            width: 100%;
+        }
+
+        .jd_nav ul li a img {
+            width: 40px;
+            height: 40px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .jd_nav ul li a p {
+            color: #666;
+            font-size: 12px;
+            padding: 5px 0;
+            text-align: center;
+        }
+
+        /*商品区域*/
+        .jd_product {
+            padding: 0 5px;
+        }
+
+        /*商品盒子*/
+        .jd_proBox {
+            margin-top: 10px;
+            box-shadow: 0 0 1px #d8d8d8;
+            min-height: 200px;
+            background: #fff;
+        }
+
+        .jd_proBox .pro_tit {
+            height: 34px;
+            line-height: 34px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        /*no border*/
+        .jd_proBox .pro_tit.nb {
+            border-bottom: none;
+        }
+
+        .jd_proBox .pro_tit h3 {
+            position: relative;
+            text-indent: 20px;
+            font-weight: normal;
+            /*原始的默认的*/
+        }
+
+        .jd_proBox .pro_tit h3::before {
+            content: "";
+            position: absolute;
+            left: 10px;
+            top: 11px;
+            width: 3px;
+            height: 12px;
+            background: #d8505c;
+        }
+    </style>
+</head>
+
+<body>
+    </section>
+    <section class="jd_proBox">
+        <div class="pro_tit">
+            <h3>京东自营</h3>
+        </div>
+        <div class="pro_con clearfix">
+            <a href="#" class="w_p50 f_left b_right"><img src="images/cp1.jpg" alt="" /></a>
+            <a href="#" class="w_p50 f_right b_bottom"><img src="images/cp2.jpg" alt="" /></a>
+            <a href="#" class="w_p50 f_right"><img src="images/cp3.jpg" alt="" /></a>
+        </div>
+    </section>
+    <section class="jd_proBox">
+        <div class="pro_tit">
+            <h3>京东超市</h3>
+        </div>
+        <div class="pro_con clearfix">
+            <a href="#" class="w_p50 f_right b_left"><img src="images/cp4.jpg" alt="" /></a>
+            <a href="#" class="w_p50 f_left b_bottom"><img src="images/cp5.jpg" alt="" /></a>
+            <a href="#" class="w_p50 f_left"><img src="images/cp6.jpg" alt="" /></a>
+        </div>
+    </section>
+    <section class="jd_proBox">
+        <div class="pro_tit">
+            <h3>京东热门</h3>
+        </div>
+        <div class="pro_con clearfix">
+            <a href="#" class="w_p50 f_left b_right"><img src="images/cp1.jpg" alt="" /></a>
+            <a href="#" class="w_p50 f_right b_bottom"><img src="images/cp2.jpg" alt="" /></a>
+            <a href="#" class="w_p50 f_right"><img src="images/cp3.jpg" alt="" /></a>
+        </div>
+    </section>
+    </div>
+    </div>
+    <script src="js/common.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
