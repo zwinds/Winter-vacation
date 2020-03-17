@@ -130,5 +130,3 @@ console.log('Server running at http://127.0.0.1:8888/');// 终端打印如下信
 - java ：Tomcat 、Weblogic
 - Node.js  : 不需要应用软件（可以自己实现）
 
-
-

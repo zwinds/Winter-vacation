@@ -9,7 +9,7 @@ const fs = require('fs');
 
 // 根据路径读取文件的内容，并且响应到浏览器端
 let readFile = (url,res) => {
-    fs.readFile(path.join(__dirname,'www',url),'utf8',(err,fileContent)=>{
+    fs.readFile(path.join(__dirname,'www',url),'utf8',(err,fileContent)=>{//_dirname指向被执行js文件的绝对路径
         if(err){
             res.end('server error');
         }else{

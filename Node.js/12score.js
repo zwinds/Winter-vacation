@@ -12,7 +12,7 @@ http.createServer((req,res)=>{
     // 路由（请求路径+请求方式）
     // 查询成绩的入口地址 /query
     if(req.url.startsWith('/query') && req.method == 'GET'){
-        fs.readFile(path.join(__dirname,'view','index.tpl'),'utf8',(err,content)=>{
+        fs.readFile(path.join(__dirname,'view','index.tpl'),'utf8',(err,content)=>{//_dirname指向被执行js文件的绝对路径
             if(err){
                 res.writeHead(500,{
                     'Content-Type':'text/plain; charset=utf8'
