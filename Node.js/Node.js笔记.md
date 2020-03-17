@@ -124,6 +124,11 @@ console.log('Server running at http://127.0.0.1:8888/');// 终端打印如下信
 - dependencies：生产环境包的依赖，一个关联数组，由包的名称和版本号组成
 - devDependencies：开发环境包的依赖，一个关联数组，由包的名称和版本号组成
 
-### 自定义包案例
+### 静态网站开发
+- 传统的动态网站开发需要应用软件
+- PHP ： Apache + php模块
+- java ：Tomcat 、Weblogic
+- Node.js  : 不需要应用软件（可以自己实现）
+
 
 
