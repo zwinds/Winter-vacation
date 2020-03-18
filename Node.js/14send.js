@@ -19,6 +19,6 @@ http.createServer((req,res)=>{
     }else{
         res.end('no content');
     }
-}).listen(3000,'localhost',()=>{
+}).listen(3000,'169.254.223.134',()=>{
     console.log('running...');
 });
