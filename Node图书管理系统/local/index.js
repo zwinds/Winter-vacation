@@ -9,7 +9,7 @@ const bodyParser = require('body-parser');
 const app = express();
 
 // 启动静态资源服务
-app.use('/www',express.static('public'));
+app.use('/zwind',express.static('public'));
 
 // 设置模板引擎
 // 设置模板的路径
